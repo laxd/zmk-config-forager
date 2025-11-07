@@ -70,11 +70,12 @@
         };
     };
 
+    # If both layer 1 AND layer 2 is active, instead activate layer 3
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <NAV SYM>;
+            then-layer = <ADJ>;
         };
     };
 
@@ -83,9 +84,9 @@
 
         base {
             bindings = <
-            &kp Q           &kp W           &kp F           &kp P           &kp B                                           &kp J           &kp L           &kp U           &kp Y           AS(SEMI)
-            &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp G                                           &kp M           &rhm LGUI N     &rhm LALT E     &rhm LCTRL I    &kp O
-            &kp Z           &kp X           &kp C           &kp D           &kp V                                           &kp K           &kp H           AS(COMMA)       AS(DOT)         AS(FSLH)
+            &kp Q           &kp W           &kp F           &kp P           &kp G                                           &kp J           &kp L           &kp U           &kp Y           AS(SEMI)
+            &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp D                                           &kp H           &rhm LGUI N     &rhm LALT E     &rhm LCTRL I    &kp O
+            &kp Z           &kp X           &kp C           &kp V           &kp B                                           &kp K           &kp M           AS(COMMA)       AS(DOT)         AS(FSLH)
                                                                             &sym_bspc 2 0   &smart_shift    &smart_shift    &lt NAV SPACE
             >;
         };
