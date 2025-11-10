@@ -70,7 +70,7 @@
         };
     };
 
-    # If both layer 1 AND layer 2 is active, instead activate layer 3
+    // If both layer 1 AND layer 2 is active, instead activate layer 3
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
