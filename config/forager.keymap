@@ -84,10 +84,10 @@
 
         base {
             bindings = <
-            &kp Q           &kp W           &kp F           &kp P           &kp G                                           &kp J           &kp L           &kp U           &kp Y           AS(SEMI)
-            &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp D                                           &kp H           &rhm LGUI N     &rhm LALT E     &rhm LCTRL I    &kp O
-            &kp Z           &kp X           &kp C           &kp V           &kp B                                           &kp K           &kp M           AS(COMMA)       AS(DOT)         AS(FSLH)
-                                                                            &sym_bspc 2 0   &smart_shift    &smart_shift    &lt NAV SPACE
+            &kp Q           &kp W           &kp F           &kp P           &kp G                                      &kp J           &kp L           &kp U           &kp Y           AS(SEMI)
+            &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp D                                      &kp H           &rhm LGUI N     &rhm LALT E     &rhm LCTRL I    &kp O
+            &kp Z           &kp X           &kp C           &kp V           &kp B                                      &kp K           &kp M           AS(COMMA)       AS(DOT)         AS(FSLH)
+                                                                            &lt NAV SPACE &sym_bspc 2 0   AS(TAB) &smart_shift
             >;
         };
 
