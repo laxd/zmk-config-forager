@@ -75,7 +75,7 @@
         compatible = "zmk,keymap";
 
         base {
-            display-name = "Base"
+            display-name = "Base";
             bindings = <
             &kp Q           &kp W           &kp F           &kp P           &kp G                                         &kp J           &kp L           &kp U                     &kp Y            &as LS(SEMI) SEMI
             &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp D                                         &kp H           &rhm LGUI N     &rhm LALT E               &rhm LCTRL I     &kp O
@@ -85,7 +85,7 @@
         };
 
         nav {
-            display-name = "Nav"
+            display-name = "Nav";
             bindings = <
             &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
             &trans          &kp LCTRL       &kp LALT        &kp LGUI        &trans                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
@@ -95,7 +95,7 @@
         };
 
         sym {
-            display-name = "Symbols"
+            display-name = "Symbols";
             bindings = <
             &as LS(N1) N1          &as LS(N2) N2          &as LS(N3) N3          &as LS(N4) N4    &as LS(N5) N5                                   &as LS(N6) N6       &as LS(N7) N7         &as LS(N8) N8         &as LS(N9) N9       &as LS(N0) N0
             &as LS(GRAVE) GRAVE    &sk LCTRL              &sk LALT               &sk LGUI         &sk LC(LALT)                                    &as LS(BSLH) BSLH   &as LS(MINUS) MINUS   &as LS(EQUAL) EQUAL   &as LS(LBKT) LBKT   &as LS(RBKT) RBKT
@@ -105,7 +105,7 @@
         };
 
         adj {
-            display-name = "Adj"
+            display-name = "Adj";
             bindings = <
             &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     &trans          &trans          &kp C_BRI_DN    &kp C_BRI_UP
             &studio_unlock  &trans          &trans          &trans          &bt BT_CLR                                      &trans          &trans          &trans          &kp C_VOL_DN    &kp C_VOL_UP
