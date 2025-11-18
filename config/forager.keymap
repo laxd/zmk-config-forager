@@ -80,7 +80,7 @@
             &kp Q           &kp W           &kp F           &kp P           &kp G                                         &kp J           &kp L           &kp U                     &kp Y            &as LS(SEMI) SEMI
             &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp D                                         &kp H           &rhm LGUI N     &rhm LALT E               &rhm LCTRL I     &kp O
             &kp Z           &kp X           &kp C           &kp V           &kp B                                         &kp K           &kp M           &as LS(COMMA) COMMA       &as LS(DOT) DOT  &as LS(FSLH) FSLH
-                                                                            &lt NAV SPACE &sym_bspc 2 0   &as LS(TAB) TAB &kp ENTER
+                                                                            &lt 1 SPACE &sym_bspc 2 0     &as LS(TAB) TAB &kp ENTER
             >;
         };
 
@@ -90,7 +90,7 @@
             &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
             &trans          &kp LCTRL       &kp LALT        &kp LGUI        &trans                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
             &trans          &trans          &trans          &trans          &trans                                          &trans          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
-                                                                            &mo SYM         &kp LSHFT       &trans          &trans
+                                                                            &mo 2         &kp LSHFT         &trans          &trans
             >;
         };
 
@@ -100,7 +100,7 @@
             &as LS(N1) N1          &as LS(N2) N2          &as LS(N3) N3          &as LS(N4) N4    &as LS(N5) N5                                   &as LS(N6) N6       &as LS(N7) N7         &as LS(N8) N8         &as LS(N9) N9       &as LS(N0) N0
             &as LS(GRAVE) GRAVE    &sk LCTRL              &sk LALT               &sk LGUI         &sk LC(LALT)                                    &as LS(BSLH) BSLH   &as LS(MINUS) MINUS   &as LS(EQUAL) EQUAL   &as LS(LBKT) LBKT   &as LS(RBKT) RBKT
             &trans                 &trans                 &trans                 &trans           &trans                                          &trans              &trans                &trans                &trans              &kp ENTER
-                                                                                                  &trans          &trans          &kp LSHFT       &mo NAV
+                                                                                                  &trans          &trans          &kp LSHFT       &mo 1
             >;
         };
 
