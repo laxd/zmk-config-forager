@@ -96,20 +96,20 @@
         nav {
             display-name = "Nav";
             bindings = <
-  &trans  &trans     &trans    &trans    &trans       &kp PAGE_UP    &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &kp DELETE
-  &trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans       &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp BSLH
-  &trans  &trans     &trans    &trans    &trans       &trans         &kp HOME       &kp END   &kp LC(SPACE)  &kp LC(SPACE)
-                               &mo 2     &kp LSHFT    &trans         &trans
+  &trans  &trans     &trans    &trans    &trans    &kp PAGE_UP    &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &kp DELETE
+  &trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp BSLH
+  &trans  &trans     &trans    &trans    &trans    &trans         &kp HOME       &kp END   &kp LC(SPACE)  &kp LC(SPACE)
+                               &trans    &trans    &trans         &trans
             >;
         };
 
         sym {
             display-name = "Symbols";
             bindings = <
-  &as LS(N1) N1        &as LS(N2) N2  &as LS(N3) N3  &as LS(N4) N4  &as LS(N5) N5    &as LS(N6) N6      &as LS(N7) N7        &as LS(N8) N8        &as LS(N9) N9      &as LS(N0) N0
-  &as LS(GRAVE) GRAVE  &sk LCTRL      &sk LALT       &sk LGUI       &sk LC(LALT)     &as LS(BSLH) BSLH  &as LS(MINUS) MINUS  &as LS(EQUAL) EQUAL  &as LS(LBKT) LBKT  &as LS(RBKT) RBKT
-  &trans               &trans         &trans         &trans         &trans           &trans             &trans               &trans               &trans             &kp ENTER
-                                                     &trans         &trans           &kp LSHFT          &mo 1
+  &kp ASTERISK  &kp AT            &kp LEFT_BRACE             &kp RIGHT_BRACE             &kp DOUBLE_QUOTES    &kp EQUAL          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+  &kp HASH      &mt LCTRL DOLLAR  &mt LALT LEFT_PARENTHESIS  &mt LGUI RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &as LS(BSLH) BSLH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+  &kp PERCENT   &kp CARET         &kp LEFT_BRACKET           &kp RIGHT_BRACKET           &kp GRAVE            &kp SLASH          &kt NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+                                                             &trans                      &trans               &trans             &trans
             >;
         };
 
