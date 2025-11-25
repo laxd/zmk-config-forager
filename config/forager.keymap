@@ -13,14 +13,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-
         sabk: shift_to_alt_backspace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -35,15 +27,6 @@
             bindings = <&sk LSHFT>, <&caps_word>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        sym_bspc: left_thumb_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <200>;
-            bindings = <&mo>, <&sabk>;
         };
 
         lhm: left_homerow_mods {
@@ -103,10 +86,10 @@
         base {
             display-name = "Base";
             bindings = <
-  &kp Q  &kp W         &kp F        &kp P        &kp G            &kp J            &kp L         &kp U                &kp Y            &as LS(SEMI) SEMI
-  &kp A  &lhm LCTRL R  &lhm LALT S  &lhm LGUI T  &kp D            &kp H            &rhm LGUI N   &rhm LALT E          &rhm LCTRL I     &kp O
-  &kp Z  &kp X         &kp C        &kp V        &kp B            &kp K            &kp M         &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH
-                                    &lt 1 SPACE  &sym_bspc 2 0    &as LS(TAB) TAB  &smart_shift
+  &kp Q  &kp W         &kp F        &kp P        &kp G              &kp J    &kp L                  &kp U                &kp Y            &as LS(SEMI) SEMI
+  &kp A  &lhm LCTRL R  &lhm LALT S  &lhm LGUI T  &kp D              &kp H    &rhm LGUI N            &rhm LALT E          &rhm LCTRL I     &kp O
+  &kp Z  &kp X         &kp C        &kp V        &kp B              &kp K    &kp M                  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH
+                                    &lt 1 SPACE  &lt 2 BACKSPACE    &kp TAB  &mt RIGHT_SHIFT ENTER
             >;
         };
 
