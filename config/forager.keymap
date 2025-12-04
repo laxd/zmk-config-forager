@@ -83,17 +83,17 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        Base {
             display-name = "Base";
             bindings = <
-  &kp Q  &kp W         &kp F        &kp P        &kp G              &kp J    &kp L                  &kp U                &kp Y            &as LS(SEMI) SEMI
-  &kp A  &lhm LCTRL R  &lhm LALT S  &lhm LGUI T  &kp D              &kp H    &rhm LGUI N            &rhm LALT E          &rhm LCTRL I     &kp O
-  &kp Z  &kp X         &kp C        &kp V        &kp B              &kp K    &kp M                  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH
-                                    &lt 1 SPACE  &lt 2 BACKSPACE    &kp TAB  &mt RIGHT_SHIFT ENTER
+  &kp Q  &kp W         &kp F        &kp P        &kp G              &kp J      &kp L                  &kp U                &kp Y            &as LS(SEMI) SEMI
+  &kp A  &lhm LCTRL R  &lhm LALT S  &lhm LGUI T  &kp D              &kp H      &rhm LGUI N            &rhm LALT E          &rhm LCTRL I     &kp O
+  &kp Z  &kp X         &kp C        &kp V        &kp B              &kp K      &kp M                  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as QUESTION SLASH
+                                    &lt 1 SPACE  &lt 2 BACKSPACE    &lt 4 TAB  &mt RIGHT_SHIFT ENTER
             >;
         };
 
-        nav {
+        Nav {
             display-name = "Nav";
             bindings = <
   &trans  &trans     &trans    &trans    &trans    &kp PAGE_UP    &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &kp DELETE
@@ -103,7 +103,7 @@
             >;
         };
 
-        sym {
+        Sym {
             display-name = "Symbols";
             bindings = <
   &kp ASTERISK  &kp AT            &kp LEFT_BRACE             &kp RIGHT_BRACE             &kp DOUBLE_QUOTES    &kp EQUAL          &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
@@ -113,13 +113,23 @@
             >;
         };
 
-        adj {
+        Adj {
             display-name = "Adj";
             bindings = <
   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp C_SLEEP  &trans  &trans  &kp C_BRI_DN  &kp C_BRI_UP
   &studio_unlock  &trans        &trans        &trans        &bt BT_CLR        &trans       &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP
   &bootloader     &trans        &trans        &trans        &trans            &trans       &trans  &trans  &trans        &bootloader
                                               &trans        &trans            &trans       &trans
+            >;
+        };
+
+        Numbers {
+            display-name = "Numbers";
+            bindings = <
+  &none  &none  &none  &none  &none    &kp MINUS     &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+  &none  &none  &none  &none  &none    &kp PLUS      &kp NUMBER_4           &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+  &none  &none  &none  &none  &none    &kp NUMBER_0  &kt NUMBER_1           &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+                       &none  &none    &none         &mt RIGHT_SHIFT TILDE
             >;
         };
     };
