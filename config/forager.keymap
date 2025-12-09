@@ -135,10 +135,10 @@
         Numbers {
             display-name = "Numbers";
             bindings = <
-  &none  &none  &none  &none  &none    &kp MINUS     &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-  &none  &none  &none  &none  &none    &kp PLUS      &kp NUMBER_4           &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-  &none  &none  &none  &none  &none    &kp NUMBER_0  &kt NUMBER_1           &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-                       &none  &none    &none         &mt RIGHT_SHIFT TILDE
+  &none  &none  &none  &none   &none     &kp MINUS     &kp NUMBER_7           &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
+  &none  &none  &none  &none   &none     &kp PLUS      &kp NUMBER_4           &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+  &none  &none  &none  &none   &none     &kp NUMBER_0  &kt NUMBER_1           &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+                       &trans  &trans    &none         &mt RIGHT_SHIFT TILDE
             >;
         };
     };
