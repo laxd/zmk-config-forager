@@ -76,7 +76,12 @@
         Enter {
             bindings = <&kp ENTER>;
             key-positions = <30 33>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2 4>;
+        };
+
+        Settings {
+            bindings = <&none>;
+            key-positions = <20 29>;
         };
     };
 
@@ -98,7 +103,7 @@
   &kp Q  &kp W         &kp F        &kp P        &kp G              &kp J      &kp L                  &kp U                &kp Y            &as LS(SEMI) SEMI
   &kp A  &lhm LCTRL R  &lhm LALT S  &lhm LGUI T  &kp D              &kp H      &rhm LGUI N            &rhm LALT E          &rhm LCTRL I     &kp O
   &kp Z  &kp X         &kp C        &kp V        &kp B              &kp K      &kp M                  &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as QUESTION SLASH
-                                    &lt 1 SPACE  &lt 2 BACKSPACE    &lt 4 TAB  &mt RIGHT_SHIFT ENTER
+                                    &lt 1 SPACE  &lt 2 BACKSPACE    &lt 3 TAB  &mt RIGHT_SHIFT ENTER
             >;
         };
 
@@ -122,23 +127,23 @@
             >;
         };
 
-        Adj {
-            display-name = "Adj";
-            bindings = <
-  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp C_SLEEP  &trans  &trans  &kp C_BRI_DN  &kp C_BRI_UP
-  &studio_unlock  &trans        &trans        &trans        &bt BT_CLR        &trans       &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP
-  &bootloader     &trans        &trans        &trans        &trans            &trans       &trans  &trans  &trans        &bootloader
-                                              &trans        &trans            &trans       &trans
-            >;
-        };
-
         Numbers {
             display-name = "Numbers";
             bindings = <
-  &none  &none  &none  &none   &none     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-  &none  &none  &none  &none   &none     &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK
-  &none  &none  &none  &none   &none     &kp DOT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                       &trans  &trans    &none      &kp NUMBER_0
+  &none  &kp MINUS     &kp PLUS  &kp EQUAL  &none     &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
+  &none  &kp ASTERISK  &kp DOT   &kp SLASH  &none     &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
+  &none  &none         &none     &none      &none     &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+                                 &trans     &trans    &kp NUMBER_0  &none
+            >;
+        };
+
+        Settings {
+            display-name = "Adj";
+            bindings = <
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &kp C_SLEEP  &studio_unlock  &trans  &kp C_BRI_DN  &kp C_BRI_UP
+  &trans        &trans        &trans        &trans        &bt BT_CLR        &trans       &trans          &trans  &kp C_VOL_DN  &kp C_VOL_UP
+  &trans        &trans        &trans        &trans        &trans            &bootloader  &trans          &trans  &trans        &trans
+                                            &trans        &trans            &trans       &trans
             >;
         };
     };
