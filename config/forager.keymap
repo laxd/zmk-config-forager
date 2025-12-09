@@ -117,7 +117,7 @@
             bindings = <
   &none  &arrow_func       &kp LEFT_BRACE              &kp RIGHT_BRACE                 &kp DOUBLE_QUOTES    &kp EXCL     &kp AT     &kp POUND      &kp DOLLAR    &none
   &none  &kp LEFT_CONTROL  &mt LALT LEFT_PARENTHESIS   &mt LGUI RIGHT_PARENTHESIS      &kp SINGLE_QUOTE     &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &none
-  &none  &none             &as LEFT_BRACKET LESS_THAN  &as RIGHT_BRACKET GREATER_THAN  &kp GRAVE            &kp MINUS    &kt EQUAL  &kp BACKSLASH  &kp SLASH     &none
+  &none  &none             &as LEFT_BRACKET LESS_THAN  &as RIGHT_BRACKET GREATER_THAN  &kp GRAVE            &kp MINUS    &kp EQUAL  &kp BACKSLASH  &kp SLASH     &none
                                                        &trans                          &trans               &kp TILDE    &kp PIPE
             >;
         };
