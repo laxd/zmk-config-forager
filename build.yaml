@@ -3,6 +3,8 @@ include:
   - board: xiao_ble//zmk
     shield: forager_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
+    # prospector's zephyr-4-1 branch only ships boards/xiao_ble.overlay, which Zephyr won't match for xiao_ble//zmk
+    cmake-args: -DEXTRA_DTC_OVERLAY_FILE=@ZEPHYR_PROSPECTOR_ZMK_MODULE_MODULE_DIR@/boards/shields/prospector_adapter/boards/xiao_ble.overlay
   - board: xiao_ble//zmk
     shield: forager_left rgbled_adapter
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
